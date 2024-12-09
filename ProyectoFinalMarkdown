@@ -1,1 +1,39 @@
 # Introduzcan su parte del proyecto final aquí en Markdown
+#Yo voy poniendo mi explicación del modelo:
+
+
+## Explicación del modelo
+Se trata de un modelo lineal múltiple. Buscamos entender como la altura, edad, peso y género influyen en el rendimiento del atleta. Para lograr este objetivo usamos la velocidad como medida de rendimiento, a mayor velocidad, mejor (pues se trata de la carrera de 100 metros). Para hacer el analisis más afin a los modelos lineales hemos transformado ciertas variables. No usaremos peso sino un coeficiente del BMI (Body Mass Index), el BMI es el peso de una persona dividido por su altura al cuadrado(en metros y kilos) $BMI = \frac{Peso}{Altura^2}$.\
+\
+Al final no usaremos BMI directamente, usaremos la distancia al BMI que se considera "ideal" para este deporte: 23.3\
+\  $DistBMI_i = |BMI_i-23.3|$\
+\
+También usaremos otra distancia: la distancia a la edad "ideal" que dice ser 27
+$EdadDist_i = |Edad_i-27|$.\
+\
+Para el género tenemos: $Genero_i = 1$ si es hombre y $Genero_i =0$ si es mujer.\
+\
+La velocidad está en m/s y la altura en cm.
+Matemáticamente, nuestro modelo se ve así:
+$$
+Y_i = \beta_0 + \beta_1Altura_i +\beta_2DistBMI_i+\beta_3Genero_i+\beta_4EdadDist_i +\epsilon_i
+$$
+
+Donde $Y_i$ es la velocidad del participante i, $\beta_0$ es el término de intercepto,$\beta_i$ son los coeficientes que se le asignan a las variables mencionadas. Gracias a que la velocidad puede sumarse, podemos interpretar estos coeficientes fácilmente:\
+\
+  $\beta_0$ es la velocidad base de los atletas\
+  \
+  $\beta_1$ es su ganancia en velocidad por centimetro de altura\
+  \
+  $\beta_2$ es su pérdida en velocidad por alejarse del BMI "ideal"\
+  \
+  $\beta_3$ es su ventaja en velocidad si es hombre\
+  \
+  $\beta_4$ es su pérdida por alejarse de la edad "ideal"\
+  \
+  $\epsilon_i$ es el error de nuestro modelo, su varianza es constante, su valor esperrado es cero, es independiente y se distribuye de manera normal.
+
+```{r}
+#Introducir el modelo
+
+```
