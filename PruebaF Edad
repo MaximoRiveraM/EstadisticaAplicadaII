@@ -1,0 +1,44 @@
+## Prueba F
+
+Queremos saber si la distancia a la edad ideal tiene buena significancia por lo tanto, haremos una prueba F para determinar si sí. El enfoque de la prueba es ver si agregar la variable reduce la varianza de manera tan significativa que rechazamos el azar.
+Nuestra hipotesis nula es el modelo reducido (R) \
+  \
+$$
+H0: \beta_4=0
+$$
+Nuestra hipótesis alternativa es el modelo completo (C)
+$$
+H1: \beta_4\neq0
+$$
+Bajo H0, usando resultados derivados de la proyección de matrices y nuestros supuestos sobre el modelo tenemos que:
+$$
+\frac{RSS_R}{\sigma^2} \sim \chi^2_{n-4}
+$$
+
+$$
+\frac{RSS_C}{\sigma^2} \sim \chi^2_{n-5}
+$$
+$$
+\frac{RSS_R-RSS_C}{\sigma^2} \sim \chi^2_{1}
+$$
+
+$$
+\frac{RSS_R-RSS_C}{\sigma^2} \perp \frac{RSS_C}{\sigma^2}
+$$
+
+Por lo que
+$$
+f:=\frac{RSS_R-RSS_C}{1\sigma^2}/\frac{RSS_C}{(n-5)\sigma^2}= (RSS_R-RSS_C)\frac{n-5}{(RSS_C)}\sim F_{1,n-5} 
+$$
+Si la reducción de los residuos es mayor a lo esperado, esta aparecerá a la derecha de la distribución. Es cuando nuestra hipótesis nula se ve menos probable y posiblemente la rechazemos.
+
+Definimos nuestra región de rechazo:
+```{r}
+n=267
+alpha= 0.05
+rechazo = qf(1-alpha,1,n-5)
+```
+Rechazamos H0 si nuestro estadístico  es superior.
+```{r}
+#Calcular el estadístico y verificar si es superior
+```
