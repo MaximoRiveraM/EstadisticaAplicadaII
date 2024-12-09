@@ -37,3 +37,4 @@ Donde $Y_i$ es la velocidad del participante i, $\beta_0$ es el término de inte
 #Introducir el modelo
 
 ```
+El modelo utiliza un ajuste de mínimos cuadrados para estimar los coeficientes desconocidos(las betas)
