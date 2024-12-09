@@ -8,7 +8,7 @@ library(ggplot2) # Cargar librería para gráficos
 
 # Cargar el dataset
 # Cambia la ruta del archivo a donde esté ubicado en tu máquina
-olympic_data <- read_csv("C:/Users/raymundo.luna/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Semestres/Séptimo semestre/Estadística aplicada 2/athlete_events.csv")
+olympic_data <- read_csv("baseFinal.csv")
 
 olympic_data
 
