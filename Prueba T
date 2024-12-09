@@ -1,0 +1,17 @@
+## Prueba T
+
+Los hombres son en promedio más altos que las mujeres por 10 cm. Nos gustaria saber si estos 10 cm dan una mayor ventaja que el género por si solo. Empezamos con nuestra hipótesis nula:
+$$
+H0: \beta_3\geq 10\beta_1, H1: \beta_3< 10\beta_1
+
+$$
+Para probar esta hipótesis vamos a usar una prueba T. Recordemos que bajo los supuestos que hemos hecho hasta ahora tenemos que bajo H0, la prueba más potente dice
+$$
+c:=(0,10,0,-1,0), t=\frac{c^T\hat\beta-0}{SE(c^T\hat\beta)} \sim t_{n-5}
+$$
+Como la hipótesis es una desigualdad, tendremos que fijarnos en la derecha de la distribución t para rechazar H0. Un estadístico a la derecha sugiere que la ventaja por 10 cm es mayor que la del género.
+```{r}
+rechazo = qt(1-alpha,n-5)
+#probar si rechazamos la hipótesis
+rechazo
+```
