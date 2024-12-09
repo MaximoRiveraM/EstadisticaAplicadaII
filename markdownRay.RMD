@@ -1,0 +1,48 @@
+---
+title: "Análisis Estadístico"
+author: "Raymundo Luna, etc."
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Introducción al Problema
+
+```{r}
+# Aquí puedes incluir la descripción del problema y el contexto
+# Esto puede estar en texto o importado de un archivo externo.
+
+```
+
+
+# Resumen del Análisis Estadístico
+
+
+
+```{r}
+# Aquí puedes incluir la descripción del problema y el contexto
+# Esto puede estar en texto o importado de un archivo externo.
+
+```
+
+
+# Marco Teórico
+
+
+```{r}
+# Aquí puedes incluir la descripción del problema y el contexto
+# Esto puede estar en texto o importado de un archivo externo.
+
+```
+
+
+# Análisis de Datos
+
+
+
+
+# Interpretación de Resultados
+
+
+
+
+# Conclusiones
