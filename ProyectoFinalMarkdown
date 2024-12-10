@@ -54,7 +54,7 @@ Algunos de los supuestos son los siguientes:
 4. **Altura**: Es beneficiosa, ya que ayuda a la distancia de zancada, pero de forma convexa.
 5. **Peso**: Es perjudicial.
 6. **Edad**: Otorga un puntaje convexo y monomodal: existe un momento óptimo entre la cantidad de entrenamiento que se puede realizar y el envejecimiento.
-7. **Índice de masa corporal (IMC)**: Ideal para un corredor de velocidad está generalmente cercano al promedio, ya que el enfoque en los músculos y la complexión a trabajar suele ser semejante entre atletas.
+7. **Índice de masa corporal (IMC / BMI)**: Ideal para un corredor de velocidad está generalmente cercano al promedio, ya que el enfoque en los músculos y la complexión a trabajar suele ser semejante entre atletas.
 
 Dado que se sabe que depende de variables no observadas, se espera que exista un error no explicado. Un modelo excesivamente preciso sería preocupante. El objetivo es comparar un buen ajuste contra la parte no explicada (es decir, tratar de medir qué tan grande es la habilidad frente a lo observable).
 
