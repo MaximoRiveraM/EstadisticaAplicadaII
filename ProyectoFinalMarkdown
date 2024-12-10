@@ -37,4 +37,54 @@ Donde $Y_i$ es la velocidad del participante i, $\beta_0$ es el término de inte
 #Introducir el modelo
 
 ```
-El modelo utiliza un ajuste de mínimos cuadrados para estimar los coeficientes desconocidos(las betas)
+El modelo utiliza un ajuste de mínimos cuadrados para estimar los coeficientes desconocidos(las betas)...
+
+## Análisis estadístico
+#Resumen de análisis estadístico que hacemos.
+
+## Marco teórico
+### Algunos supuestos importantes
+# Supuestos
+
+Algunos de los supuestos son los siguientes:
+
+1. **Nacionalidad**: Genera demasiadas categorías, por lo que la cantidad de datos se desbordaría.
+2. **Etnia**: No es medible en sí; si lo fuera, estaría altamente correlacionada con las variables observadas.
+3. **Habilidad y entrenamiento**: No son fácilmente medibles. Sin embargo, podría haber un análisis cualitativo de estos factores (por ejemplo, la franja mínima de desempeño para llegar a los Juegos Olímpicos o el impulso al desempeño en bloques por país, como ocurre con Jamaica).
+4. **Altura**: Es beneficiosa, ya que ayuda a la distancia de zancada, pero de forma convexa.
+5. **Peso**: Es perjudicial.
+6. **Edad**: Otorga un puntaje convexo y monomodal: existe un momento óptimo entre la cantidad de entrenamiento que se puede realizar y el envejecimiento.
+7. **Índice de masa corporal (IMC)**: Ideal para un corredor de velocidad está generalmente cercano al promedio, ya que el enfoque en los músculos y la complexión a trabajar suele ser semejante entre atletas.
+
+Dado que se sabe que depende de variables no observadas, se espera que exista un error no explicado. Un modelo excesivamente preciso sería preocupante. El objetivo es comparar un buen ajuste contra la parte no explicada (es decir, tratar de medir qué tan grande es la habilidad frente a lo observable).
+
+Los resultados se miden en el tiempo para recorrer 100 metros. La información directa difícilmente presenta errores normales; cuanto más rápido se es en una carrera, más difícil es disminuir el tiempo.
+
+### **LogResult**
+
+Debemos pensar que una disminución del tiempo en igual porcentaje implica un aumento de esfuerzo proporcional.
+
+### **Velocidad**
+
+Su interpretación es mucho más directa. Ahora, la mejora es a medida que aumenta la velocidad, en lugar de a medida que disminuye el tiempo. La curva es, de hecho, algo parecida a `-LogResult`, por lo que muchas cosas se comportan según los supuestos anteriores, pero con una mejor interpretación. Sin embargo, la mejora en el esfuerzo es lineal.
+
+El tiempo de reacción es una parte del error aleatorio, que depende de otra habilidad y su correspondiente margen de error.
+
+La idea es que, si existe un modelo, cumpla los supuestos de manera razonable. Si lo hace, lo haría mediante una transformación de los datos, como se establece en los supuestos.
+
+Ahora bien, los supuestos son vagos a propósito, pero no esperamos una curva excesivamente compleja, porque eso difícilmente se ajustaría a algo pertinente. Eso probablemente sería un ajuste individualizado, y aún si no lo fuera, es extremadamente improbable.
+
+Siguiendo la **navaja de Ockham**, podemos asumir que la curva tiene baja complejidad. Entonces, como la curva es poco compleja, podemos asumir linealidad en su forma más simple y cuadrática en aquellas variables en las que se espera un máximo. Puesto que los coeficientes son indeterminados, el modelo óptimo se aproximaría a través de polinomios de Taylor (de bajo grado).
+
+
+
+## Análisis de datos
+### Análisis exploratorio
+### Modelo lineal inicial
+### Modelo lineal 2.0.
+### Modelo final
+### Modelo reducido
+
+## Resultados - interprestación
+
+## Conclusiones
