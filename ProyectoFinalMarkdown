@@ -50,7 +50,7 @@ Algunos de los supuestos son los siguientes:
 
 1. **Nacionalidad**: Genera demasiadas categorías, por lo que la cantidad de datos se desbordaría.
 2. **Etnia**: No es medible en sí; si lo fuera, estaría altamente correlacionada con las variables observadas.
-3. **Habilidad y entrenamiento**: No son fácilmente medibles. Sin embargo, podría haber un análisis cualitativo de estos factores (por ejemplo, la franja mínima de desempeño para llegar a los Juegos Olímpicos o el impulso al desempeño en bloques por país, como ocurre con Jamaica).
+3. **Habilidad y entrenamiento**: No son fácilmente medibles. Sin embargo, podría haber un análisis cualitativo de estos factores (por ejemplo, la franja mínima de desempeño para llegar a los Juegos Olímpicos o el impulso al desempeño por país, como ocurre con Jamaica).
 4. **Altura**: Es beneficiosa, ya que ayuda a la distancia de zancada, pero de forma convexa.
 5. **Peso**: Es perjudicial.
 6. **Edad**: Otorga un puntaje convexo y monomodal: existe un momento óptimo entre la cantidad de entrenamiento que se puede realizar y el envejecimiento.
