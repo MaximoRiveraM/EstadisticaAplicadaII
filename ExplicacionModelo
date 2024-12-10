@@ -15,7 +15,7 @@ $$
 Y_i = \beta_0 + \beta_1Altura_i +\beta_2DistBMI_i+\beta_3Genero_i+\beta_4EdadDist_i +\epsilon_i
 $$
 
-Donde $Y_i$ es la velocidad del participante i, $\beta_0$ es el término de intercepto,$\beta_i$ son los coeficientes que se le asignan a las variables mencionadas. Gracias a que la velocidad puede sumarse, podemos interpretar estos coeficientes fácilmente:\
+Donde $Y_i$ es la velocidad del participante i (m/s) , $\beta_0$ es el término de intercepto,$\beta_i$ son los coeficientes que se le asignan a las variables mencionadas. Gracias a que la velocidad puede sumarse, podemos interpretar estos coeficientes fácilmente:\
 \
   $\beta_0$ es la velocidad base de los atletas\
   \
@@ -23,9 +23,9 @@ Donde $Y_i$ es la velocidad del participante i, $\beta_0$ es el término de inte
   \
   $\beta_2$ es su pérdida en velocidad por alejarse del BMI "ideal"\
   \
-  $\beta_3$ es su ventaja en velocidad si es hombre\
+  $\beta_3$ es la diferencia media en velocidad de la rama varonil\
   \
-  $\beta_4$ es su pérdida por alejarse de la edad "ideal"\
+  $\beta_4$ es su pérdida en velocidad por alejarse de la edad "ideal"\
   \
   $\epsilon_i$ es el error de nuestro modelo, su varianza es constante, su valor esperrado es cero, es independiente y se distribuye de manera normal.
 
