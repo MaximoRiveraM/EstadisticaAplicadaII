@@ -1,10 +1,10 @@
 ## Explicación del modelo
 Se trata de un modelo lineal múltiple. Buscamos entender como la altura, edad, peso y género influyen en el rendimiento del atleta. Para lograr este objetivo usamos la velocidad como medida de rendimiento, a mayor velocidad, mejor (pues se trata de la carrera de 100 metros). Para hacer el analisis más afin a los modelos lineales hemos transformado ciertas variables. No usaremos peso sino un coeficiente del BMI (Body Mass Index), el BMI es el peso de una persona dividido por su altura al cuadrado(en metros y kilos) $BMI = \frac{Peso}{Altura^2}$.\
 \
-Al final no usaremos BMI directamente, usaremos la distancia al BMI que se considera "ideal" para este deporte: 23.3\
+Para la interpretación del BMI usaremos la distancia al BMI "ideal" teórico para este deporte: 23.3\
 \  $DistBMI_i = |BMI_i-23.3|$\
 \
-También usaremos otra distancia: la distancia a la edad "ideal" que dice ser 27
+Análogamente se usará la distancia a la edad óptima teórica, 27 años.
 $EdadDist_i = |Edad_i-27|$.\
 \
 Para el género tenemos: $Genero_i = 1$ si es hombre y $Genero_i =0$ si es mujer.\
